@@ -25,3 +25,29 @@ body {
     text-wrap: balance;
   }
 }
+
+/* styles/globals.css or app/globals.css */
+
+@media only screen and (min-width: 900px) {
+  .desktop {
+    display: initial;
+  }
+}
+
+.desktop {
+  display: none;
+}
+
+.hr-long {
+  width: 75px;
+}
+
+.hr {
+  margin: 0 25px;
+  height: 1px;
+}
+
+.bg-brand-gradient {
+  background: linear-gradient(90deg, #FF5F6D, #FFC371);
+  color: white;
+}

@@ -1,101 +1,60 @@
-import Image from "next/image";
-
+// app/page.tsx
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+      <div className="flex flex-col h-screen bg-[#1c1c1c] text-white">
+          {/* Navigation Bar */}
+          <header className="flex justify-between items-center p-4 bg-[#262626] shadow-md mb-90">
+              <div className="flex items-center">
+                  <img src="/XFER-Logo.png" alt="Logo" className="h-10 mr-4" />
+                  
+                  {/* Horizontal Line (Stripe) */}
+                  <div className="w-20 h-px bg-gradient-to-r from-[#FF5F6D] to-[#FFC371] mx-4" />
+                  
+                  <span className="text-sm">Pluralitas non est ponenda sine necessitate.</span>
+              </div>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">
+                  <button className="text-white font-semibold px-5 py-2 rounded-lg bg-gradient-to-r from-[#FF5F6D] to-[#FFC371]">
+                      Prijavi se
+                  </button>
+              </a>
+          </header>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+          {/* Centered Content */}
+          <main className="flex flex-col flex-1 text-center justify-center items-center mt-8 -mt-12"> {/* Adjusting margins */}
+              <h1 className="text-8xl font-semibold  mt-40">X.FER</h1>
+              <p className="text-xl bg-gradient-to-r from-[#FF5F6D] to-[#FFC371] bg-clip-text text-transparent font-semibold mt-7">Informatički klub <br /> studenata FERa.</p> {/* Increased gap */}
+          </main>
+
+          {/* Vertical Line */}
+          <div className="mt-20 w-px bg-gradient-to-r from-[#FF5F6D] to-[#FFC371] flex-grow mx-auto" /> {/* Fill remaining space */}
+
+
+          {/* Footer */}
+          <footer className="bg-gray-800 p-8">
+  <div className="flex justify-between"> {/* Removed space-x class */}
+    {/* Left Column for Links */}
+    <div className="flex-1 pr-2"> {/* Added padding-right for spacing */}
+      <h3 className="text-gray-300 font-bold mb-2">Column 1 Title</h3> {/* Reduced margin */}
+      <ul>
+        <li className="mb-1"><a href="#" className="text-gray-300 hover:underline">Link 1</a></li>
+        <li className="mb-1"><a href="#" className="text-gray-300 hover:underline">Link 2</a></li>
+        <li className="mb-1"><a href="#" className="text-gray-300 hover:underline">Link 3</a></li>
+      </ul>
     </div>
+
+    {/* Right Column for Links */}
+    <div className="flex-1 pl-0"> {/* Added padding-left for spacing */}
+      <h3 className="text-gray-300 font-bold mb-2">Column 2 Title</h3> {/* Reduced margin */}
+      <ul>
+        <li className="mb-1"><a href="#" className="text-gray-300 hover:underline">Link 1</a></li>
+        <li className="mb-1"><a href="#" className="text-gray-300 hover:underline">Link 2</a></li>
+        <li className="mb-1"><a href="#" className="text-gray-300 hover:underline">Link 3</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+      </div>
   );
 }
