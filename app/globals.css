@@ -51,3 +51,13 @@ body {
   background: linear-gradient(90deg, #FF5F6D, #FFC371);
   color: white;
 }
+@font-face {
+  font-family: "Monomaniac One";
+  src: url("https://xfer.hr/res/Monomaniac%20One%20Regular%20HR.ttf") format("truetype");
+}
+
+svg {
+  font-family: "Monomaniac One";
+}
+
+
