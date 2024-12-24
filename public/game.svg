@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 40">
+  <rect width="110" height="40" rx="6" fill="#70a3fa" stroke="none"/>
+  <text x="55" y="16" fill="white" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" stroke="none">    Game</text>
+  <text x="55" y="30" fill="white" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold" stroke="none">X.PRESS</text>
+</svg>
